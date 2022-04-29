@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500;1,600&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+    body {
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(225, 100%, 94%);
+        font-family: 'Red Hat Display', sans-serif;
+        text-align: center;
+    }
+    p {
+      color: hsl(224, 23%, 55%);
+    }
+    .card {
+        margin-top: 7.5%;
+        background-color: white;
+        width: 360px;
+        height: 620px;
+        z-index: 5;
+        border-radius: 20px;
+    }
+    .plan {
+        display: flex;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 10px;
+        height: auto;
+        height: 60px;
+        width: 260px;
+        padding: 20px;
+        margin: 30px;
+        background-color: hsl(225, 100%, 98%);
+    }
+    #music {
+        margin-left: 20px;
+        float: left;
+    }
+    .annual {
+        float: left;
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #change {
+        float: right;
+        margin-left: 65px;
+        margin-right: 25px;
+    }
+    .proceed {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 50px;
+        color: white;
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 10px;
+        margin: 30px;
+        box-shadow: 0px 10px 20px gray;
+    }
+    #cancel {
+        color: hsl(224, 23%, 55%);
+    }
+    .card img {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .plan img {
+        width: auto;
+    }
+    .attribution {
+        font-size: 11px; text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+     }
+  </style>
+</head>
+<body>
+
+  
+  <div class="card">
+    <img src="/images/illustration-hero.svg" alt="#">
+    <h1>Order Summary</h1>
+  
+   <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+     device anywhere you like!
+   </p>
+   <div class="plan">
+     <img id="music" src="/images/icon-music.svg" alt="">
+     <div class="annual"><b>Annual Plan</b>
+      $59.99/year</div>
+    <a href="#" id="change">Change</a>
+   </div>
+  
+
+   
+   <div class="proceed">
+     Proceed to Payment
+   </div>
+    
+   <div id="cancel">Cancel Order</div> 
+  </div>
+</body>
+</html>
